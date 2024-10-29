@@ -1,6 +1,13 @@
+import { FC } from "react";
+import { Monster } from "../../App";
+
 import "./card_item_component_style.css";
 
-const CardItem = ({ monsterIt }) => {
+type CardProps = {
+  monsterIt: Monster;
+};
+
+const CardItem = ({ monsterIt }: CardProps) => {
   const { id, name, email } = monsterIt;
 
   return (
